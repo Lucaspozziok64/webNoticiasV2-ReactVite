@@ -1,0 +1,9 @@
+
+
+.formulario {
+  border: 1px solid red;
+  background: -webkit-linear-gradient(90deg,#15173c,#2375ef); /* Chrome 10-25, Safari 5.1-6 */ background: linear-gradient(90deg,#15173c,#2375ef); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  padding: 10px;
+  color: white;
+  border-radius: 7px;
+}
