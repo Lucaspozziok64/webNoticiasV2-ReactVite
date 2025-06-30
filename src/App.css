@@ -7,3 +7,17 @@
   color: white;
   border-radius: 7px;
 }
+
+.card {
+box-shadow: 17px 11px 2px -3px rgba(255,255,21,1);
+-webkit-box-shadow: 17px 11px 2px -3px rgba(255,255,21,1);
+-moz-box-shadow: 17px 11px 2px -3px rgba(255,255,21,1);
+}
+
+.botonVerNoticia {
+  text-decoration: none;
+  background-color: blue;
+  border-radius: 5px;
+  text-align: center;
+  cursor: pointer;
+}
