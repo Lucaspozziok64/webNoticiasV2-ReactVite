@@ -18,7 +18,7 @@ const ListaNoticia = () => {
         <a className="botonVerNoticia text-white" target="blank">
           Ver noticia completa
         </a>
-        <p class="card-text"><small class="text-body-secondary">Publicacion</small></p>
+        <p className="card-text"><small class="text-body-secondary">Publicacion</small></p>
       </div>
     </div>
   );
