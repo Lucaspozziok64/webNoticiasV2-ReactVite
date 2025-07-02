@@ -35,6 +35,10 @@ function App() {
           ))}
         </div>
       </main>
+      <footer className="bg-secondary text-center text-black">
+        <p className="mb-0">&copy;Todos los derechos reservados</p>
+        <p className="mb-0">Desarrollado por <a href="http://">Lucas Figueroa</a></p>
+      </footer>
     </>
   );
 }
