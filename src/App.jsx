@@ -13,7 +13,7 @@ function App() {
   const obtenerNoticia = async () => {
     try {
       const respuesta = await fetch(
-        `https://newsdata.io/api/1/latest?apikey=pub_7c1484730fa64707bd2289a5f123fd36&category=${categorias}&country=${paises}&language=es`
+        `https://newsdata.io/api/1/latest?apikey=&category=${categorias}&country=${paises}&language=es`
       );
       const datos = await respuesta.json();
       setNoticias(datos.results || []);
