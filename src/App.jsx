@@ -10,10 +10,12 @@ function App() {
   const [paises, setPaises] = useState('ar')
   const [categorias, setCategorias] = useState('sports')
 
+  const miApiKey = (import.meta.env.VITE_API_APIURL)
+
   const obtenerNoticia = async () => {
     try {
       const respuesta = await fetch(
-        `https://newsdata.io/api/1/latest?apikey=&category=${categorias}&country=${paises}&language=es`
+        `https://newsdata.io/api/1/latest?apikey=${miApiKey}&category=${categorias}&country=${paises}&language=es`
       );
       const datos = await respuesta.json();
       setNoticias(datos.results || []);
