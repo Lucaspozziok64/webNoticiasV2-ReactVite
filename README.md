@@ -1,12 +1,42 @@
-# React + Vite
+📰 Aplicación de Noticias con React y Vite Version-2
+- 
+- Aplicación web que muestra noticias filtradas por categoría y país, desarrollada con React y Vite.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+🌟 Características principales
+- 
+- 🌍 Filtrado de noticias por país y categoría
+- 🗞️ Visualización en tarjetas (cards) responsive
+- ⚡ Renderizado rápido con Vite
+- 🔍 Interfaz intuitiva y moderna
 
-Currently, two official plugins are available:
+📦 Instalación y uso
+- 
+- 1-Clona el repositorio:
+````
+git clone https://github.com/Lucaspozziok64/webNoticiasV2-ReactVite.git
+````
+- 2-Intala dependencias:
+````
+npm install
+````
+- 3-inicia el servidor:
+````
+npm run dev
+````
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+🛠️ Tecnologías utilizadas
+- 
+- React 18+ (Hooks, Context API)
+- React 18+ (Hooks, Context API)
+- CSS Modules (para estilos componentizados)
+- API de Noticias (NewsAPI u otra similar)
 
-## Expanding the ESLint configuration
+🌐 API utilizada
+- 
+- La aplicación consume datos de NewsAPI (requiere API key):
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+
+👨‍💻 Autor
+- 
+- Lucas Figueroa
+
