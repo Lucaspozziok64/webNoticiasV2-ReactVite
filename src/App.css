@@ -21,3 +21,12 @@ box-shadow: 17px 11px 2px -3px rgba(255,255,21,1);
   text-align: center;
   cursor: pointer;
 }
+
+.truncate-3-lines {
+  display: -webkit-box;
+  line-clamp: 3;
+  -webkit-line-clamp: 3; /* Número de líneas */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
