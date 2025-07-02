@@ -24,6 +24,14 @@ function App() {
 
   return (
     <>
+      <header className="bg-secondary">
+        <nav className="container-fluid">
+          <div className="d-flex justify-content-between p-1">
+            <h6>NoticiasApp🗺️</h6>
+            <h6 className="fs-4">🌐</h6>
+          </div>
+        </nav>
+      </header>
       <main className="container my-5">
         <Titulo />
         <section className="container my-4 contenedorForm">
