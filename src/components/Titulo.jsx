@@ -1,7 +1,7 @@
 
 const Titulo = () => {
     return (
-      <h1 className='text-center' style={{ fontStyle: 'italic' }} >Noticias</h1>
+      <h1 className='text-center text-white' style={{ fontStyle: 'italic' }} >Noticias</h1>
     );
 };
 
