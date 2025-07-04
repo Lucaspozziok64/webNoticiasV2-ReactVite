@@ -38,8 +38,8 @@ function App() {
       <header className="bg-secondary">
         <nav className="container-fluid">
           <div className="d-flex justify-content-between p-1">
-            <h6>NoticiasApp🗺️</h6>
-            <h6 className="fs-4">🌐</h6>
+            <h6 className="mb-0 p-2">NoticiasApp🗺️</h6>
+            <h6 className="mb-0 p-1 fs-4">🌐</h6>
           </div>
         </nav>
       </header>
