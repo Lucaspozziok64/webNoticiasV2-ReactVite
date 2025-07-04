@@ -73,7 +73,7 @@ const Formulario = ({ setPaises, setCategorias, obtenerNoticia, categoria, pais 
           ))}
         </select>
       </div>
-      <div className="d-flex justify-content-end">
+      <div className="d-flex justify-content-center justify-content-md-end my-3">
           <button className="bg-success text-white">Consultar</button>
       </div>
     </form>
