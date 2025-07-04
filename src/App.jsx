@@ -58,7 +58,7 @@ function App() {
       </main>
       <footer className="bg-secondary text-center text-black">
         <p className="mb-0">&copy;Todos los derechos reservados</p>
-        <p className="mb-0">Desarrollado por <a href="http://">Lucas Figueroa</a></p>
+        <p className="mb-0">Desarrollado por <a href="https://github.com/Lucaspozziok64">Lucas Figueroa</a></p>
       </footer>
     </>
   );
