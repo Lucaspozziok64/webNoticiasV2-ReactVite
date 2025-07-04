@@ -1,3 +1,6 @@
+#nprogress .bar {
+  background: #ff070f !important; /* Amarillo Bootstrap */
+}
 
 
 .formulario {

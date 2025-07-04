@@ -4,6 +4,7 @@ import Titulo from "./components/Titulo";
 import Formulario from "./components/Formulario";
 import ListaNoticia from "./components/ListaNoticias";
 import { useEffect, useState } from "react";
+import nProgress from "nprogress";
 
 function App() {
   const [noticias, setNoticias] = useState([]);
@@ -14,6 +15,8 @@ function App() {
 
   const obtenerNoticia = async () => {
     try {
+      nProgress.start()
+      await new Promise(resolve => setTimeout(resolve, 2000)); // Simula 2 segundos de espera
       const respuesta = await fetch(
         `https://newsdata.io/api/1/latest?apikey=${miApiKey}&category=${categorias}&country=${paises}&language=es`
       );
@@ -21,6 +24,8 @@ function App() {
       setNoticias(datos.results || []);
     } catch (error) {
       console.error(error);
+    } finally {
+      nProgress.done()
     }
   };
 
@@ -34,16 +39,22 @@ function App() {
           </div>
         </nav>
       </header>
-      <main className="container my-5">
+      <main className="container my-3">
         <Titulo />
         <section className="container my-4 contenedorForm">
           <Formulario obtenerNoticia={obtenerNoticia} categoria={categorias} pais={paises} setCategorias={setCategorias} setPaises={setPaises} />
         </section>
-        <div className="container my-3 row row-cols-1 row-cols-md-3 row-cols-lg-4 row-cols-xl-5 g-4">
+        <h4 className="text-white text-center my-2">
+          {noticias.length === 0 ? "No hay noticias aún 😔" : "Mire sus noticias aqui 👇😎"}
+        </h4>
+        <div className="container my-4 row row-cols-1 row-cols-md-3 row-cols-lg-4 row-cols-xl-5 g-4">
           {noticias.map((noticia, index)=> (
             <ListaNoticia key={index} noticia={noticia} />
           ))}
         </div>
+        <h4 className="text-white text-center my-3">
+          {noticias.length === 0 ? "" : "Agradecemos mucho su visita🥰🤩"}
+        </h4>
       </main>
       <footer className="bg-secondary text-center text-black">
         <p className="mb-0">&copy;Todos los derechos reservados</p>
